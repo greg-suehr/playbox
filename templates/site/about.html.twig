@@ -1,8 +1,93 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}About Us{% endblock %}
+{% block title %}About Playbox Theater{% endblock %}
 
 {% block body %}
-<h1>About Playbox</h1>
-<p>Playbox Theater is a company dedicated to producing fresh, original theatrical work.</p>
+
+{# Mission Banner #}
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold">About Playbox</h1>
+        <p class="lead text-muted">
+            PLAYBOX Productions is a home for original work, collaborative process, and fierce creative voices.
+        </p>
+    </div>
+</section>
+
+{# Origin Story / Mission #}
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-start gy-4">
+            <div class="col-md-6">
+                <h2 class="fw-bold">Who We Are</h2>
+                <p>
+                  PLAYBOX stands for <em>"People Love Art, Y'know? But, Okay... X, huh?"</em>
+                </p>
+                <p>
+                  Not really.
+                </p>
+                <p>
+                    We produce one mainstage show per year and one mini-festival of short pieces, offering a platform to early-career artists and experimental voices. Through our studio workshops, we cultivate the next wave of bold performers, directors, and writers.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/images/founders-rehearsal.jpg" alt="Playbox founders in rehearsal" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Team Bios (can become dynamic later) #}
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">What We Do</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4 text-center">
+                <img src="/images/headshot-placeholder.jpg" alt="Artistic Director headshot" class="img-fluid rounded-circle mb-3" width="150">
+                <h5 class="fw-bold">Alex Rivera</h5>
+                <p class="text-muted small">Artistic Director</p>
+                <p>A director, writer, and lifelong collaborator. Alex founded Playbox to build a space where process matters as much as product.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="/images/headshot-placeholder.jpg" alt="Studio Manager headshot" class="img-fluid rounded-circle mb-3" width="150">
+                <h5 class="fw-bold">Maya Thompson</h5>
+                <p class="text-muted small">Studio Manager</p>
+                <p>Performer, producer, and workshop facilitator. Maya oversees our training programs and keeps the lights on — literally and metaphorically.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="/images/headshot-placeholder.jpg" alt="Technical Director headshot" class="img-fluid rounded-circle mb-3" width="150">
+                <h5 class="fw-bold">Jules King</h5>
+                <p class="text-muted small">Technical Director</p>
+                <p>Designer and fixer-of-all-things. Jules ensures every show has the tools, safety, and vision it needs to thrive.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{# Ethos Statement or Values #}
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">What We Believe</h2>
+        <p class="lead text-muted">
+            Theater is a lab. An offering. A call. We make space for work that’s messy, tender, urgent, funny, and strange.
+        </p>
+        <p>
+            We value shared leadership. We invite collaboration across disciplines. We pay artists. We know that great theater begins in a room of people who trust each other.
+        </p>
+    </div>
+</section>
+
+{# CTA #}
+<section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+        <h4 class="fw-bold mb-3">Want to Work With Us?</h4>
+        <p class="mb-4">We’re always looking to collaborate with designers, performers, and playwrights. Drop us a line and say hi.</p>
+        <a href="#" class="btn btn-primary">Get in Touch</a>
+    </div>
+</section>
+
 {% endblock %}

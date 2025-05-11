@@ -1,8 +1,96 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Classes{% endblock %}
+{% block title %}Classes at Playbox Studio{% endblock %}
 
 {% block body %}
-<h1>Classes</h1>
-<p>Explore our acting, directing, and playwriting workshops.</p>
+
+{# Page Intro #}
+<section class="py-5 text-center bg-light">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Workshops & Training</h1>
+        <p class="lead text-muted">
+            At Playbox Studio, we believe the best training comes from collaboration, risk-taking, and focused practice.
+        </p>
+    </div>
+</section>
+
+{# Class Offerings #}
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Actor's Lab</h5>
+                        <p class="card-text">
+                          The Actors Training Class is admission by audition only. As a member, you’ll be cast in our annual STAGE ONE production — a showcase for emerging playwrights, actors, and directors.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="#" class="btn btn-outline-primary w-100">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Public Lectures and Workshops</h5>
+                        <p class="card-text">
+                          We host open lectures, panels, and skill-building workshops throughout the year. Topics range from dramaturgy and design to the business of making theater. All are welcome — no prior experience necessary.
+                        </p>
+                    </div>
+`                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="#" class="btn btn-outline-primary w-100">See What's Next</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Playwright's Corner</h5>
+                        <p class="card-text">
+                          A free monthly meetup for playwrights to share work-in-progress, exchange feedback, and connect with fellow writers. Whether you're revising a full-length or drafting your first scene, all are welcome.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="#" class="btn btn-outline-primary w-100">RSVP</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{# Inquiry CTA #}
+<section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h3 class="fw-bold mb-3">Have Questions?</h3>
+        <p class="mb-4">Reach out to ask about upcoming class dates, availability, or anything you like. Just don't ask us late for dinner.</p>
+        <a href="#" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+</section>
+
+{# Newsletter CTA #}
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h4 class="fw-bold mb-3">Stay In The Loop</h4>
+        <p class="mb-4">Our class schedule evolves seasonally — subscribe to our (very occassional!) newsletter.
+          <br>
+          Or just follow us on Instagram.*</p>
+        <form class="row justify-content-center" method="post" action="#">
+            <div class="col-md-6 col-lg-4">
+                <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+                    <button class="btn btn-outline-primary" type="submit">Subscribe</button>
+                </div>
+            </div>            
+        </form>
+          <p><br>*Please do subscribe to the newsletter though.</p>
+    </div>
+</section>
+
 {% endblock %}

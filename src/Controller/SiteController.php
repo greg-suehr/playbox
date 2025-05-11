@@ -16,7 +16,7 @@ final class SiteController extends AbstractController
         ]);
   }
   
-  #[Route('/home', name: 'app_home')]
+  #[Route('/', name: 'app_home')]
   public function home(): Response
   {
         return $this->render('site/home.html.twig', [

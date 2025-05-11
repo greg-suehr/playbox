@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to Playbox{% endblock %}
+
+{% block body %}
+<h1>Welcome to Playbox Theater</h1>
+<p>Where creativity takes the stage.</p>
+{% endblock %}
